@@ -13,13 +13,21 @@ function addToLibrary(e){
     const author = document.querySelector(".author").value;
     const pages = document.querySelector(".pages").value;
     const read = document.querySelector(".read").value;
+    const check = document.querySelector("#exampleCheck1")
+
+    function checkForm(form){
+        if(form.check.checked){
+            alert("So you read this book")
+        }
+    }
     tableBody.innerHTML += `
     <tr>
     <th scope="row">${title}</th>
     <td>${author}</td>
     <td>${pages}</td>
-    <td>${read}</td>
-  </tr>
+    <td>read</td>
+    <td><button class = "deletebtn"> Delete</button></td>
+    
     `
 
 
