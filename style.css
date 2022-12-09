@@ -18,6 +18,13 @@ form div{
     padding-bottom: 20px;
 }
 
+.form-control:focus {
+    color: #495057;
+    background-color: bisque;
+    border-color: #7c0b60;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(6, 79, 156, 0.25);
+  }
 /* .tuton{
     border: none;
     padding: 0;
