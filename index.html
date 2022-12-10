@@ -30,15 +30,15 @@
                 </div>
               </div>
               <div class="form-floating mb-3">
-                <input type="text" class="form-control author shadow-none" id="floatingInput" placeholder="Book">
+                <input type="text" class="form-control author shadow-none" id="floatingInput" placeholder="Book" required>
                 <label for="floatingInput">Who is the author of this book?</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="text" class="form-control pages shadow-none" id="floatingInput" placeholder="Book">
+                <input type="number" class="form-control pages shadow-none" id="floatingInput" placeholder="Book" required>
                 <label for="floatingInput">How many pages are in the book?</label>
               </div>
               <div class="form-check">
-                <input type="checkbox" class="form-check-input read shadow-none" name="check" id="validationFormCheck1">
+                <input type="checkbox" class="form-check-input read shadow-none" onclick="hello()" name="check" id="validationFormCheck1">
                 <label class="form-check-label" for="validationFormCheck1">I have already read this book!</label>
                 <div class="invalid-feedback">Feed back</div>
               </div>
