@@ -19,12 +19,15 @@
             
         </header>
 
-        <p>Enter book details here</p>
+        <p>Enter book details here!</p>
 
-        <form action="" autocomplete="off">
+        <form action="" autocomplete="off" class="needs-validation">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control title shadow-none" id="floatingInput" placeholder="Book" >
+                <input type="text" class="form-control title shadow-none" id="floatingInput" placeholder="Book" required>
                 <label for="floatingInput">What is the title of the book?</label>
+                <div class="invalid-feedback">
+                 Please enter book title
+                </div>
               </div>
               <div class="form-floating mb-3">
                 <input type="text" class="form-control author shadow-none" id="floatingInput" placeholder="Book">
@@ -35,9 +38,9 @@
                 <label for="floatingInput">How many pages are in the book?</label>
               </div>
               <div class="form-check">
-                <input type="checkbox" class="form-check-input read shadow-none" name="check" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">I have already read this book!</label>
-               
+                <input type="checkbox" class="form-check-input read shadow-none" name="check" id="validationFormCheck1">
+                <label class="form-check-label" for="validationFormCheck1">I have already read this book!</label>
+                <div class="invalid-feedback">Feed back</div>
               </div>
 
               <button type="submit" class="btn btn-primary">Add To Library</button>
@@ -58,7 +61,7 @@
                 <th scope="col">AUTHOR</th>
                 <th scope="col">PAGES</th>
                 <th scope="col">READ</th>
-                <th scope="col">DELETE</th>
+                <th scope="col">REMOVE</th>
                 
               </tr>
             </thead>
@@ -67,7 +70,7 @@
                 <th scope="row">Harry Potter</th>
                 <td>JJ Rowlings</td>
                 <td>96</td>
-                <td><button aria-label='delete item' onClick='alert("You deleted the item!")' type='button'>X</button></td>
+                <td class="reado"><button type="button" class="" aria-label='delete item' onClick='hello()' ><i class="fa fa-check" aria-hidden="true"></i></button></td>
                 <td><button class="tuton" aria-label='delete item' onClick='alert("You deleted the item!")' type='button'><i class="fa fa-trash" aria-hidden="true"></i></button></td>
               </tr>
               
