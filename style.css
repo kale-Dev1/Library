@@ -20,7 +20,7 @@ form div{
     padding-bottom: 20px;
 }
 p{
-    margin: auto;
+    margin-left: 25px;
 }
 
 .form-control:focus {
@@ -35,6 +35,9 @@ p{
     padding: 0;
     background: none;
 } */
+.fa-check{
+    color: green;
+}
 
 
 .form-control{
